@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  line-height: 1.2;
+  font-weight: 400;
+  background-color: #ddd0c8;
+  min-height: 100vh;
+  border: solid 5px #323232;
+  color: #323232;
+  font-size: 16px;
+}
+/*HEADING SECTION /////////////////////
+TOTAL 10 SECTION COMES IN TWO DIVS
+MAIN DIV IS CALLED:  (1) PROGRAM_CONTAINER  (2) PROGRAM_CONTENT
+////////////////////////////////////////////////*/
+
+.program_content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* SECTION-1 TOP SECTION /////////////////////////////////////////*/
+.top_section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.image_container,
+img {
+  width: 320px;
+  height: 300px;
+}
+
+.image_container {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.top_section h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #323232;
+  line-height: 1.8;
+}
+/*ESPCIAL WORDS MOVEMENT*/
+.top_section h4 {
+  font-size: 20px;
+  text-align: end;
+  margin-right: 230px;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid brown; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: brown;
+  }
+}
+
+
+/*ABOUT SECTION APPLIED ON 8 SECTIONS///////////////////////////////////////////*/
+
+.about_section{
+margin-top: 50px;
+margin-bottom: 40px;
+}
+.about_section h2{
+  font-size: 32px;
+  font-weight: 600px;
+  line-height: 1.8;
+}
+.about_section h4{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  
+}
+.about_section p {
+  margin-top: 10px;
+  font-size: 22px;
+}
+/*PROGRAMMING SECTION ///////////////////////////////////////////////////////*/
+.programming_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.website_content {
+  display: flex;
+  margin-top: 30px;
+}
+.website_links {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+
+.divider {
+  border: 1px solid #2d1b1b;
+  margin: 20px 0;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: navy;
+
+  transition: 0.2s ease-in-out;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+
+/* PUBLICATION SECTION////////////////////////////////////////////////////////////*/
+
+.publication_section {
+  margin-top: 50px;
+}
+
+.publication_section h4 {
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+
+.publication_section ul {
+  margin-left: 30px;
+}
+
+.publication_section li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.publication_section a {
+  color: navy;
+  font-size: 20px;
+}
+th,
+td {
+  border: 1px solid black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  text-align: center;
+  padding: 10px;
+}
+td {
+  font-size: 18px;
+}
+
+li {
+  margin: 20px 20px;
+  font-size: 10px;
+}
+/* PUBLICATION SECTION ENDS ////////////////////////////////////////////////////////////////*/
+
+/*THESIS SECTION ///////////////////////////////////////////*/
+.thesis {
+  margin-top: 50px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.space_start {
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+/*////////////////////////////////////////////////////////////*/
+
+/*MY CODING WORK SECTION ////////////////////////////////////////////////////*/
+.coding_work_container{
+display: flex;
+justify-content: space-between;
+margin: 0 auto;
+ }
+ .keyword_extraction{
+  display: flex;
+  flex-direction: column;  
+ }
+
+ .keyword_extraction h4{
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 24px;
+ }
+.keyword_extraction ul{
+  list-style: none;
+  margin-top: 5px;
+}
+ /*My coding section ends //////////////////////////////////////////////*/
+ .keyword_extraction a{
+  text-decoration: none;
+  
+ }
+
+
+/*footer##########################################*/
+
+.link_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.link_content ul {
+  list-style: none;
+}
+.navy_link {
+  color: #323232;
+}
+a {
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 0px;
+}
+.subprograms {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+footer {
+  display: flex;
+  justify-content: end;
+  margin: 30px 0;
+}
+
+i {
+  font-size: 24px;
+  color: #323232;
+  margin-right: 10px;
+}
+.information_header {
+  font-size: 20px;
+}
+.icons {
+  margin-top: 20px;
+  margin-right: 2px;
+}
+li {
+  font-size: 18px;
+}
+.keyword_Extraction h4 {
+  margin-left: 15px;
+}
+
+.Section_heading {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+.table {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+
+/*MEDIA SECTION///////////////////////////////////////////////////////////////////////////////*/
+@media (max-width: 786px) {
+  .top_section h1 {
+    font-size: 30px;
+  }
+  .content {
+    max-width: 600px;
+  }
+  .image_container
+   {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image_container
+   {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 350px) {
+  .top_section h1 {
+    font-size: 30px;
+  }
+  .content {
+    max-width: 600px;
+  }
+  .image_container
+   {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image_container img
+   {
+    width: 80%;
+
+}
+/*MEDIA SECTION ENDS HERE//////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*MEDIA SECTION ENDS ////////////////////////////////////////////////*/
+
+                        END
+/*/////////////////////////////////////////*/
